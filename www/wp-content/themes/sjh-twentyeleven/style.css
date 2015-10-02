@@ -1,0 +1,121 @@
+/*
+Theme Name:     SJH-twentyeleven
+Description:    
+Author:         Admin
+Template:       twentyeleven
+
+(optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
+*/
+
+#page {
+	background-image: url(/images/footer-boat.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom; 
+}
+
+
+#branding {
+    border-top: 0;
+	background: url(/images/header-bg.jpg) no-repeat;
+}
+
+
+#branding hgroup {
+    height: 268px;
+}
+
+#site-title, #access a, #bottom-access a, .entry-title {
+	font-family: LiteraturaPro-BookItalic;
+}
+
+.singular .entry-title, h1, h2, h3 {
+	font-weight: normal; 
+}
+
+#site-title {
+    margin-right: 0;
+    padding: 120px 0 0 220px;
+}
+
+#site-title a {
+    color: #111;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+#site-description {
+    color: #1e456b;
+    font-family: times new roman;
+    font-size: 26px;
+    margin: 0;
+    padding: 5px 30px 0 220px;
+    text-align: right;
+}
+
+#bottom-access ul.children {
+	display: none;
+}
+
+#access {
+	background: url("/images/mainnav-bg.jpg") repeat scroll 0 0;
+	
+}
+
+#access div {
+    margin: 0 4%;
+}
+
+#access ul, #bottom-access ul {
+	font-size: 26px;
+	margin: 0;
+	list-style: outside none none;
+}
+
+#access li, #bottom-access li {
+    float: left;
+    position: relative;
+}
+
+#access a, #bottom-access a {
+	line-height: 50px;
+	padding: 0 25px;
+}
+
+#access a {
+	color: #fff;
+}
+
+#bottom-access a {
+	color: #fff;
+}
+
+#main {
+    margin: 0;
+}
+
+.entry-title {
+	font-size: 30px;
+	font-weight: normal; 
+}
+
+
+.hentry, .no-results {
+    border-bottom: 0 none;
+}
+
+#colophon {
+    clear: both;
+    padding-top: 240px;
+}
+
+#site-generator, #bottom-access {
+    background: url("/images/mainnav-bg.jpg") repeat scroll 0 0;
+}
+
+
+@media only screen and ( max-width: 800px ) {
+#access {
+	display: none;
+}
+
+}
