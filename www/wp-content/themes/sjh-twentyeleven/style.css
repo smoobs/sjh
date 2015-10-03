@@ -52,7 +52,7 @@ Template:       twentyeleven
     text-align: right;
 }
 
-#bottom-access ul.children {
+#bottom-access ul ul {
 	display: none;
 }
 
@@ -71,6 +71,14 @@ Template:       twentyeleven
 	list-style: outside none none;
 }
 
+#access ul ul {
+    top: 50px;
+}
+
+#access ul ul a {
+	font-size: 18px!important;
+}
+
 #access li, #bottom-access li {
     float: left;
     position: relative;
@@ -78,7 +86,7 @@ Template:       twentyeleven
 
 #access a, #bottom-access a {
 	line-height: 50px;
-	padding: 0 25px;
+	padding: 0 20px;
 }
 
 #access a {
