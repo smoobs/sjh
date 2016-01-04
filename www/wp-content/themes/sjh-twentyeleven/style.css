@@ -34,7 +34,7 @@ body {
     padding: 0 7.6%;
 }
 
-#site-title, #access a, #bottom-access a, .entry-title, h2, .entry-content h3, .comment-content h3  {
+#site-title, .widget-title, #access a, #bottom-access a, .entry-title, h2, .entry-content h3, .comment-content h3  {
 	font-family: LiteraturaPro-BookItalic;
 }
 
@@ -44,7 +44,8 @@ body {
 
 #site-title {
     margin-right: 0;
-    padding: 120px 0 0 220px;
+    padding: 120px 0 0;
+    text-align: right;
 }
 
 #site-title a {
@@ -54,11 +55,11 @@ body {
 }
 
 #site-description {
-    color: #1e456b;
+    color: #225c93;
     font-family: times new roman;
     font-size: 26px;
     margin: 0;
-    padding: 5px 30px 0 220px;
+    padding: 5px 0 0 220px;
     text-align: right;
 }
 
@@ -275,6 +276,33 @@ img[class*="align"], img[class*="wp-image-"], #content .gallery .gallery-icon im
   text-decoration: none;
 }
 
+/* widgets */ 
+.widget {
+    hyphens: none;
+    word-wrap: normal;
+}
+
+.widget-title {
+	color: #222;
+    font-size: 1.6em;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.6em;
+    text-transform: none;
+}
+
+.widget a {
+    font-weight: normal;
+}
+
+.fb-like.fb_iframe_widget, #___plusone_0 {
+    display: inline-block;
+    vertical-align: middle!important;
+    padding-bottom: 10px!important;
+    padding-right: 10px;
+}
+
+/* footer */
 #colophon {
     clear: both;
     padding-top: 240px;
@@ -298,19 +326,16 @@ img[class*="align"], img[class*="wp-image-"], #content .gallery .gallery-icon im
 .clearfix { display: block; }
 /* close commented backslash hack */
 
-@media only screen and ( max-width: 800px ) {
-#access {
-	display: none;
+@media only screen and ( max-width: 940px ) {
+#branding {
+    background: url(/images/header-narrow.png) no-repeat;
+	background-size: contain;
 }
 
 #site-title {
     margin-right: 0;
-    padding: 28% 0 0 0;
-	text-align: center;
-}
-
-#site-title a {
-    font-size: 3em;
+    padding: 28% 0 0;
+    text-align: center;
 }
 
 #site-description {
@@ -320,12 +345,6 @@ img[class*="align"], img[class*="wp-image-"], #content .gallery .gallery-icon im
 	font-size: 20px;
 	line-height: 1.4em;
 }
-
-#branding {
-    background: url(/images/header-narrow.png) no-repeat;
-	background-size: contain;
-}
-
 #branding hgroup {
     height: auto;
 	border-bottom: 3px solid #fff;
@@ -334,9 +353,15 @@ img[class*="align"], img[class*="wp-image-"], #content .gallery .gallery-icon im
 .border-div {
     border-top: 3px solid #fff;
 }
+} /* end max-width: 9400px  */
 
-
-
-
-
+@media only screen and ( max-width: 800px ) {
+#access {
+	display: none;
 }
+
+
+#site-title a {
+    font-size: 3em;
+}
+} /* end max-width: 800px  */
