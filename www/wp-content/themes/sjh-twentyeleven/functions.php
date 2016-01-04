@@ -14,3 +14,18 @@ function theme_enqueue_styles() {
 //
 // Your code goes below
 //
+
+/* for testing if a page is a child of an existing page;
+	Usage: if (is_tree('2')) { 
+	// stuff 
+	} // (this is for child of page id '2' )
+From http://tinyurl.com/9e6q8us
+*/
+
+function is_tree($pid) {      // $pid = The ID of the page we're looking for pages underneath
+	global $post;         // load details about this page
+	if(is_page()&&($post->post_parent==$pid||is_page($pid))) 
+               return true;   // we're at the page or at a sub page
+	else 
+               return false;  // we're elsewhere
+};

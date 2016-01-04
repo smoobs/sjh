@@ -23,13 +23,16 @@
 					get_sidebar( 'footer' );
 			?>
 
-			<nav id="bottom-access" role="navigation">
+			
+	</footer><!-- #colophon -->
+	</div><!-- .border-div ends -->
+	<nav id="bottom-access" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav><!-- #bottom-access -->
 			<div id="site-generator">
 				
 			</div>
-	</footer><!-- #colophon -->
+	
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
