@@ -29,9 +29,8 @@ get_header(); ?>
 <div id="mc_embed_signup">
 <form action="//palaceofstories.us2.list-manage.com/subscribe/post?u=ac240678e7f9769631f2e8ed7&amp;id=2c8f55799b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 <div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+	<label for="mce-EMAIL">Email Address </label>
 	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 </div>
 <div class="mc-field-group">
